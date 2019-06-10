@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get '/shops', to: 'shops#index'
   get '/shops/:id', to: 'shops#show'
   post '/shops', to: 'shops#create'
+  delete '/shops/:id', to: 'shops#delete'
+  put '/shops/:id', to: 'shops#update'
 end
